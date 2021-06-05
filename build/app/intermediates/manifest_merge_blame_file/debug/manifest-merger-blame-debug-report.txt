@@ -1,0 +1,572 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.bizi"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6    <!--
+7 <service
+8      android:name=".java.MyFirebaseMessagingService"
+9      android:exported="false">
+10      <intent-filter>
+11        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+12      </intent-filter>
+13    </service>
+14    -->
+15    <uses-sdk
+16        android:minSdkVersion="21"
+17        android:targetSdkVersion="29" />
+18    <!--
+19         Flutter needs it to communicate with the running application
+20         to allow setting breakpoints, to provide hot reload, etc.
+21    -->
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:8:5-67
+22-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:8:22-64
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+23-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-65
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+24-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+25-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+25-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+26    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+26-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+26-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+27    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+27-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+27-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-78
+28    <uses-permission android:name="android.permission.VIBRATE" />
+28-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-66
+28-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-63
+29    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+29-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+29-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
+30    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+30-->[com.google.firebase:firebase-iid:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/81bc976a903d964a4896ed2092b73241/firebase-iid-21.0.1/AndroidManifest.xml:26:5-82
+30-->[com.google.firebase:firebase-iid:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/81bc976a903d964a4896ed2092b73241/firebase-iid-21.0.1/AndroidManifest.xml:26:22-79
+31    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- android:name="io.flutter.app.FlutterApplication" -->
+31-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:26:5-110
+31-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:26:22-107
+32    <application
+32-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:10:5-60:19
+33        android:name="com.example.bizi.Application"
+33-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:12:9-36
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.3.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5fd279f3856e70e6b7f85db60eb3b1d8/core-1.3.0/AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/launcher_icon"
+36-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:15:9-45
+37        android:label="Bizi"
+37-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:14:9-29
+38        android:usesCleartextTraffic="true" >
+38-->[:cloud_functions] /home/klapeers12/flutter/bizi/build/cloud_functions/intermediates/library_manifest/debug/AndroidManifest.xml:9:9-44
+39        <activity
+39-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:16:9-51:20
+40            android:name="com.example.bizi.MainActivity"
+40-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:17:13-41
+41            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+41-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:20:13-163
+42            android:hardwareAccelerated="true"
+42-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:21:13-47
+43            android:launchMode="singleTop"
+43-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:18:13-43
+44            android:theme="@style/LaunchTheme"
+44-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:19:13-47
+45            android:windowSoftInputMode="adjustResize" >
+45-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:22:13-55
+46
+47            <!--
+48                 Specifies an Android theme to apply to this Activity as soon as
+49                 the Android process has started. This theme is visible to the user
+50                 while the Flutter UI initializes. After that, this theme continues
+51                 to determine the Window background behind the Flutter UI.
+52            -->
+53            <meta-data
+53-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:27:13-30:17
+54                android:name="io.flutter.embedding.android.NormalTheme"
+54-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:28:15-70
+55                android:resource="@style/NormalTheme" />
+55-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:29:15-52
+56            <!--
+57                 Displays an Android View that continues showing the launch screen
+58                 Drawable until Flutter paints its first frame, then this splash
+59                 screen fades out. A splash screen is useful to avoid any visual
+60                 gap between the end of Android's launch screen and the painting of
+61                 Flutter's first frame.
+62            -->
+63            <meta-data
+63-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:36:13-39:17
+64                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+64-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:37:15-79
+65                android:resource="@drawable/launch_background" />
+65-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:38:15-61
+66
+67            <intent-filter>
+67-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:40:13-45:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:42:17-68
+68-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:42:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:43:17-76
+70-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:43:27-74
+71            </intent-filter>
+72            <intent-filter>
+72-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:47:13-50:29
+73                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+73-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:48:17-69
+73-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:48:25-66
+74
+75                <category android:name="android.intent.category.DEFAULT" />
+75-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:49:17-76
+75-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:49:27-73
+76            </intent-filter>
+77        </activity>
+78        <!--
+79             Don't delete the meta-data below.
+80             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+81        -->
+82        <meta-data
+82-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:54:9-56:33
+83            android:name="flutterEmbedding"
+83-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:55:13-44
+84            android:value="2" />
+84-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:56:13-30
+85
+86        <service
+86-->[:firebase_database] /home/klapeers12/flutter/bizi/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+87            android:name="com.google.firebase.components.ComponentDiscoveryService"
+87-->[:firebase_database] /home/klapeers12/flutter/bizi/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+88            android:directBootAware="true"
+88-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+89            android:exported="false" >
+89-->[com.google.firebase:firebase-messaging:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/3361ae555df8c3a3ccd930b4e2fac450/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:38:13-37
+90            <meta-data
+90-->[:firebase_database] /home/klapeers12/flutter/bizi/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+91-->[:firebase_database] /home/klapeers12/flutter/bizi/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[:firebase_database] /home/klapeers12/flutter/bizi/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+93            <meta-data
+93-->[:cloud_firestore] /home/klapeers12/flutter/bizi/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+94                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+94-->[:cloud_firestore] /home/klapeers12/flutter/bizi/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[:cloud_firestore] /home/klapeers12/flutter/bizi/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+96            <meta-data
+96-->[:cloud_functions] /home/klapeers12/flutter/bizi/build/cloud_functions/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-14:85
+97                android:name="com.google.firebase.components:io.flutter.plugins.firebase.functions.FlutterFirebaseAppRegistrar"
+97-->[:cloud_functions] /home/klapeers12/flutter/bizi/build/cloud_functions/intermediates/library_manifest/debug/AndroidManifest.xml:13:17-128
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[:cloud_functions] /home/klapeers12/flutter/bizi/build/cloud_functions/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-82
+99            <meta-data
+99-->[:firebase_auth] /home/klapeers12/flutter/bizi/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+100                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+100-->[:firebase_auth] /home/klapeers12/flutter/bizi/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[:firebase_auth] /home/klapeers12/flutter/bizi/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+102            <meta-data
+102-->[:firebase_storage] /home/klapeers12/flutter/bizi/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+103                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+103-->[:firebase_storage] /home/klapeers12/flutter/bizi/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[:firebase_storage] /home/klapeers12/flutter/bizi/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+105            <meta-data
+105-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+106-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+108            <meta-data
+108-->[:firebase_core] /home/klapeers12/flutter/bizi/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+109-->[:firebase_core] /home/klapeers12/flutter/bizi/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_core] /home/klapeers12/flutter/bizi/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-messaging:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/3361ae555df8c3a3ccd930b4e2fac450/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:39:13-41:85
+112                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+112-->[com.google.firebase:firebase-messaging:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/3361ae555df8c3a3ccd930b4e2fac450/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:40:17-119
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-messaging:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/3361ae555df8c3a3ccd930b4e2fac450/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:41:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:77:13-79:85
+115                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+115-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:78:17-109
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:79:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-functions:19.2.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/411cdd90e329ef384db54c7002aef1be/jetified-firebase-functions-19.2.0/AndroidManifest.xml:18:13-20:85
+118                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+118-->[com.google.firebase:firebase-functions:19.2.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/411cdd90e329ef384db54c7002aef1be/jetified-firebase-functions-19.2.0/AndroidManifest.xml:19:17-111
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-functions:19.2.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/411cdd90e329ef384db54c7002aef1be/jetified-firebase-functions-19.2.0/AndroidManifest.xml:20:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-firestore:22.1.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/fdf0e69c1f13fa7a8853e5af75d2750c/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:20:13-22:85
+121                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+121-->[com.google.firebase:firebase-firestore:22.1.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/fdf0e69c1f13fa7a8853e5af75d2750c/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:21:17-111
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-firestore:22.1.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/fdf0e69c1f13fa7a8853e5af75d2750c/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:22:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-storage:19.2.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/f2f3893c26de2f3055f67743e0627834/firebase-storage-19.2.2/AndroidManifest.xml:33:13-35:85
+124                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+124-->[com.google.firebase:firebase-storage:19.2.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/f2f3893c26de2f3055f67743e0627834/firebase-storage-19.2.2/AndroidManifest.xml:34:17-107
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-storage:19.2.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/f2f3893c26de2f3055f67743e0627834/firebase-storage-19.2.2/AndroidManifest.xml:35:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-database:19.7.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/24cac466f4cd702b90fe76863ee64e01/firebase-database-19.7.0/AndroidManifest.xml:32:13-34:85
+127                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+127-->[com.google.firebase:firebase-database:19.7.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/24cac466f4cd702b90fe76863ee64e01/firebase-database-19.7.0/AndroidManifest.xml:33:17-109
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-database:19.7.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/24cac466f4cd702b90fe76863ee64e01/firebase-database-19.7.0/AndroidManifest.xml:34:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-iid:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/81bc976a903d964a4896ed2092b73241/firebase-iid-21.0.1/AndroidManifest.xml:32:13-34:85
+130                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+130-->[com.google.firebase:firebase-iid:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/81bc976a903d964a4896ed2092b73241/firebase-iid-21.0.1/AndroidManifest.xml:33:17-96
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-iid:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/81bc976a903d964a4896ed2092b73241/firebase-iid-21.0.1/AndroidManifest.xml:34:17-82
+132            <meta-data
+132-->[com.google.android.gms:play-services-measurement-api:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/ddd2774ef680ec7b1d6e7c3ebc59efe1/play-services-measurement-api-18.0.2/AndroidManifest.xml:30:13-32:85
+133                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+133-->[com.google.android.gms:play-services-measurement-api:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/ddd2774ef680ec7b1d6e7c3ebc59efe1/play-services-measurement-api-18.0.2/AndroidManifest.xml:31:17-139
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.android.gms:play-services-measurement-api:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/ddd2774ef680ec7b1d6e7c3ebc59efe1/play-services-measurement-api-18.0.2/AndroidManifest.xml:32:17-82
+135            <meta-data
+135-->[com.google.firebase:firebase-datatransport:17.0.10] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/e6e644f2293a360e35a562851f1e86fe/firebase-datatransport-17.0.10/AndroidManifest.xml:28:13-30:85
+136                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+136-->[com.google.firebase:firebase-datatransport:17.0.10] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/e6e644f2293a360e35a562851f1e86fe/firebase-datatransport-17.0.10/AndroidManifest.xml:29:17-115
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.firebase:firebase-datatransport:17.0.10] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/e6e644f2293a360e35a562851f1e86fe/firebase-datatransport-17.0.10/AndroidManifest.xml:30:17-82
+138            <meta-data
+138-->[com.google.firebase:firebase-installations:16.3.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/2c1b778f09d17c9a8a92258ee62b2bd6/firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+139                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+139-->[com.google.firebase:firebase-installations:16.3.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/2c1b778f09d17c9a8a92258ee62b2bd6/firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.firebase:firebase-installations:16.3.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/2c1b778f09d17c9a8a92258ee62b2bd6/firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+141            <!--
+142                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+143                clients to use it as well, by defining this registrar in their own core/common library.
+144            -->
+145            <meta-data
+145-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+146                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+146-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+148        </service>
+149        <service
+149-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+150            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+150-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+151            android:exported="false"
+151-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+152            android:permission="android.permission.BIND_JOB_SERVICE" />
+152-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+153        <service
+153-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+154            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+154-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+155            android:exported="false" >
+155-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+156            <intent-filter>
+156-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+157                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+157-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+157-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+158            </intent-filter>
+159        </service>
+160
+161        <receiver
+161-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+162            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+162-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+163            android:exported="true"
+163-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+164            android:permission="com.google.android.c2dm.permission.SEND" >
+164-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+165            <intent-filter>
+165-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+166                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+166-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+166-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+167            </intent-filter>
+168        </receiver>
+169
+170        <provider
+170-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+171            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+171-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+172            android:authorities="com.example.bizi.flutterfirebasemessaginginitprovider"
+172-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+173            android:exported="false"
+173-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+174            android:initOrder="99" />
+174-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+175        <provider
+175-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+176            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+176-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+177            android:authorities="com.example.bizi.flutter.image_provider"
+177-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+178            android:exported="false"
+178-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+179            android:grantUriPermissions="true" >
+179-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+180            <meta-data
+180-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+181                android:name="android.support.FILE_PROVIDER_PATHS"
+181-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+182                android:resource="@xml/flutter_image_picker_file_paths" />
+182-->[:image_picker] /home/klapeers12/flutter/bizi/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+183        </provider>
+184
+185        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+185-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-106
+185-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:19-103
+186        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+186-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-20:20
+186-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-107
+187            <intent-filter>
+187-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-19:29
+188                <action android:name="android.intent.action.BOOT_COMPLETED" />
+188-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-79
+188-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:25-76
+189                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+189-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-84
+189-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:25-81
+190                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+190-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-82
+190-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:25-79
+191                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+191-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-82
+191-->[:flutter_local_notifications] /home/klapeers12/flutter/bizi/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-79
+192            </intent-filter>
+193        </receiver>
+194
+195        <activity
+195-->[:url_launcher] /home/klapeers12/flutter/bizi/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+196            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+196-->[:url_launcher] /home/klapeers12/flutter/bizi/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+197            android:exported="false"
+197-->[:url_launcher] /home/klapeers12/flutter/bizi/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+198            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+198-->[:url_launcher] /home/klapeers12/flutter/bizi/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+199        <!--
+200             FirebaseMessagingService performs security checks at runtime,
+201             but set to not exported to explicitly avoid allowing another app to call it.
+202        -->
+203        <service
+203-->[com.google.firebase:firebase-messaging:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/3361ae555df8c3a3ccd930b4e2fac450/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:28:9-35:19
+204            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+204-->[com.google.firebase:firebase-messaging:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/3361ae555df8c3a3ccd930b4e2fac450/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:29:13-82
+205            android:directBootAware="true"
+205-->[com.google.firebase:firebase-messaging:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/3361ae555df8c3a3ccd930b4e2fac450/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:30:13-43
+206            android:exported="false" >
+206-->[com.google.firebase:firebase-messaging:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/3361ae555df8c3a3ccd930b4e2fac450/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:31:13-37
+207            <intent-filter android:priority="-500" >
+207-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+208                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+208-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+208-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+209            </intent-filter>
+210        </service>
+211
+212        <activity
+212-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:27:9-44:20
+213            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+213-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:28:13-80
+214            android:excludeFromRecents="true"
+214-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:29:13-46
+215            android:exported="true"
+215-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:30:13-36
+216            android:launchMode="singleTask"
+216-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:31:13-44
+217            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+217-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:32:13-72
+218            <intent-filter>
+218-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:33:13-43:29
+219                <action android:name="android.intent.action.VIEW" />
+219-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:34:17-69
+219-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:34:25-66
+220
+221                <category android:name="android.intent.category.DEFAULT" />
+221-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:49:17-76
+221-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:49:27-73
+222                <category android:name="android.intent.category.BROWSABLE" />
+222-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:37:17-78
+222-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:37:27-75
+223
+224                <data
+224-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:39:17-42:51
+225                    android:host="firebase.auth"
+225-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:40:21-49
+226                    android:path="/"
+226-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:41:21-37
+227                    android:scheme="genericidp" />
+227-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:42:21-48
+228            </intent-filter>
+229        </activity>
+230        <activity
+230-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:45:9-62:20
+231            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+231-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:46:13-79
+232            android:excludeFromRecents="true"
+232-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:47:13-46
+233            android:exported="true"
+233-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:48:13-36
+234            android:launchMode="singleTask"
+234-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:49:13-44
+235            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+235-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:50:13-72
+236            <intent-filter>
+236-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:51:13-61:29
+237                <action android:name="android.intent.action.VIEW" />
+237-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:34:17-69
+237-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:34:25-66
+238
+239                <category android:name="android.intent.category.DEFAULT" />
+239-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:49:17-76
+239-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:49:27-73
+240                <category android:name="android.intent.category.BROWSABLE" />
+240-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:37:17-78
+240-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:37:27-75
+241
+242                <data
+242-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:39:17-42:51
+243                    android:host="firebase.auth"
+243-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:40:21-49
+244                    android:path="/"
+244-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:41:21-37
+245                    android:scheme="recaptcha" />
+245-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:42:21-48
+246            </intent-filter>
+247        </activity>
+248
+249        <service
+249-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:64:9-73:19
+250            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+250-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:65:13-101
+251            android:enabled="true"
+251-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:66:13-35
+252            android:exported="false" >
+252-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:67:13-37
+253            <intent-filter>
+253-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:68:13-72:29
+254                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+254-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:69:17-89
+254-->[com.google.firebase:firebase-auth:20.0.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/90499890987d033d8fe17cb0a36284f5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:69:25-86
+255
+256                <category android:name="android.intent.category.DEFAULT" />
+256-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:49:17-76
+256-->/home/klapeers12/flutter/bizi/android/app/src/main/AndroidManifest.xml:49:27-73
+257            </intent-filter>
+258        </service>
+259
+260        <receiver
+260-->[com.google.firebase:firebase-iid:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/81bc976a903d964a4896ed2092b73241/firebase-iid-21.0.1/AndroidManifest.xml:37:9-44:20
+261            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+261-->[com.google.firebase:firebase-iid:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/81bc976a903d964a4896ed2092b73241/firebase-iid-21.0.1/AndroidManifest.xml:38:13-78
+262            android:exported="true"
+262-->[com.google.firebase:firebase-iid:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/81bc976a903d964a4896ed2092b73241/firebase-iid-21.0.1/AndroidManifest.xml:39:13-36
+263            android:permission="com.google.android.c2dm.permission.SEND" >
+263-->[com.google.firebase:firebase-iid:21.0.1] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/81bc976a903d964a4896ed2092b73241/firebase-iid-21.0.1/AndroidManifest.xml:40:13-73
+264            <intent-filter>
+264-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+265                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+265-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+265-->[:firebase_messaging] /home/klapeers12/flutter/bizi/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+266            </intent-filter>
+267        </receiver>
+268
+269        <activity
+269-->[com.google.android.gms:play-services-base:17.1.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12b2a981af48a4d34665a895e1a50203/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+270            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+270-->[com.google.android.gms:play-services-base:17.1.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12b2a981af48a4d34665a895e1a50203/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+271            android:exported="false"
+271-->[com.google.android.gms:play-services-base:17.1.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12b2a981af48a4d34665a895e1a50203/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+272            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+272-->[com.google.android.gms:play-services-base:17.1.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12b2a981af48a4d34665a895e1a50203/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+273
+274        <provider
+274-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+275            android:name="com.google.firebase.provider.FirebaseInitProvider"
+275-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+276            android:authorities="com.example.bizi.firebaseinitprovider"
+276-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+277            android:directBootAware="true"
+277-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+278            android:exported="false"
+278-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+279            android:initOrder="100" />
+279-->[com.google.firebase:firebase-common:19.5.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/5ecbbb7a11053fb22a316442c10d146b/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+280
+281        <receiver
+281-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:29:9-33:20
+282            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+282-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:30:13-85
+283            android:enabled="true"
+283-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:31:13-35
+284            android:exported="false" >
+284-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:32:13-37
+285        </receiver>
+286
+287        <service
+287-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:35:9-38:40
+288            android:name="com.google.android.gms.measurement.AppMeasurementService"
+288-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:36:13-84
+289            android:enabled="true"
+289-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:37:13-35
+290            android:exported="false" />
+290-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:38:13-37
+291        <service
+291-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:39:9-43:72
+292            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+292-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:40:13-87
+293            android:enabled="true"
+293-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:41:13-35
+294            android:exported="false"
+294-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:42:13-37
+295            android:permission="android.permission.BIND_JOB_SERVICE" />
+295-->[com.google.android.gms:play-services-measurement:18.0.2] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/12a56a4ea5909dbc2cab9b909b953e0e/play-services-measurement-18.0.2/AndroidManifest.xml:43:13-69
+296
+297        <meta-data
+297-->[com.google.android.gms:play-services-basement:17.1.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/c7c3fad8000a8f0a0aba954e2f82df39/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+298            android:name="com.google.android.gms.version"
+298-->[com.google.android.gms:play-services-basement:17.1.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/c7c3fad8000a8f0a0aba954e2f82df39/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+299            android:value="@integer/google_play_services_version" />
+299-->[com.google.android.gms:play-services-basement:17.1.0] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/c7c3fad8000a8f0a0aba954e2f82df39/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+300
+301        <service
+301-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/46bcceb5bf013c6d07e9ecfdcd90d402/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+302            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+302-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/46bcceb5bf013c6d07e9ecfdcd90d402/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+303            android:exported="false" >
+303-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/46bcceb5bf013c6d07e9ecfdcd90d402/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+304            <meta-data
+304-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/46bcceb5bf013c6d07e9ecfdcd90d402/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+305                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+305-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/46bcceb5bf013c6d07e9ecfdcd90d402/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+306                android:value="cct" />
+306-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/46bcceb5bf013c6d07e9ecfdcd90d402/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+307        </service>
+308        <service
+308-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/958af27b0a240abca8bcf5c039d3d1e2/jetified-transport-runtime-2.2.5/AndroidManifest.xml:26:9-30:19
+309            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+309-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/958af27b0a240abca8bcf5c039d3d1e2/jetified-transport-runtime-2.2.5/AndroidManifest.xml:27:13-117
+310            android:exported="false"
+310-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/958af27b0a240abca8bcf5c039d3d1e2/jetified-transport-runtime-2.2.5/AndroidManifest.xml:28:13-37
+311            android:permission="android.permission.BIND_JOB_SERVICE" >
+311-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/958af27b0a240abca8bcf5c039d3d1e2/jetified-transport-runtime-2.2.5/AndroidManifest.xml:29:13-69
+312        </service>
+313
+314        <receiver
+314-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/958af27b0a240abca8bcf5c039d3d1e2/jetified-transport-runtime-2.2.5/AndroidManifest.xml:32:9-34:40
+315            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+315-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/958af27b0a240abca8bcf5c039d3d1e2/jetified-transport-runtime-2.2.5/AndroidManifest.xml:33:13-132
+316            android:exported="false" />
+316-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/klapeers12/.gradle/caches/transforms-2/files-2.1/958af27b0a240abca8bcf5c039d3d1e2/jetified-transport-runtime-2.2.5/AndroidManifest.xml:34:13-37
+317    </application>
+318
+319</manifest>
