@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "268230959330",
+    "firebase_url": "https://bizi-68e70.firebaseio.com",
+    "project_id": "bizi-68e70",
+    "storage_bucket": "bizi-68e70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268230959330:android:ff7f649198f6db6234bebb",
+        "android_client_info": {
+          "package_name": "com.example.bizi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268230959330-g6d1prltii17d29ecseiiv9v4eo3u597.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bizi",
+            "certificate_hash": "9f51f67cf4f602b99ecfbd5329df2863ed4cbf71"
+          }
+        },
+        {
+          "client_id": "268230959330-3neounag95oslf15gtlr2lcprdakrb4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvMkTMvgl8w0HywHbgcalGT98cILZ3IW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268230959330-3neounag95oslf15gtlr2lcprdakrb4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
